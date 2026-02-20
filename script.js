@@ -7,8 +7,8 @@ const fileUploadWrapper = promptForm.querySelector(".file-upload-wrapper");
 const themeToggle = document.querySelector("#theme-toggle-btn");
 
 //Setting up the API
-const API_KEY = "AIzaSyA8AeBBrsF4aVRAzFYuzkUTgt4jVfX-puw";
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`
+const API_KEY = "AIzaSyABfZIA7WPS_016Covso18Z5VQoZUoBIpI";
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`
 
 
 let typingInterval , controller;
@@ -221,5 +221,6 @@ themeToggle.addEventListener("click" , () => {
 
 promptForm.addEventListener("submit" , handleFormSubmit);
 promptForm.querySelector("#add-file-btn").addEventListener("click" , () => fileInput.click());
+
 
 
